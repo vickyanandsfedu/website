@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicky Anand | Junior Researcher — Geospatial & Environmental Sciences</title>
+    <meta name="description" content="Vicky Anand — Junior Researcher, Academy of Biology and Biotechnology, Southern Federal University. Geospatial modeling, disaster risk assessment, and machine learning for environmental science.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 28px;
+        }
+        .skills-grid .detail-card { margin-bottom: 0; }
+        .research-diagram {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .research-diagram img {
+            max-width: 380px;
+            width: 100%;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+        }
+        .research-diagram p {
+            margin-top: 12px;
+            font-size: 0.9rem;
+            color: var(--text-light, #718096);
+        }
+        .exposure-note {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 0.95rem;
+            color: var(--text-light, #718096);
+        }
+        .course-card p.course-org {
+            font-size: 0.9rem;
+            color: var(--text-light, #718096);
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">V. Anand</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#trainings">Trainings</a></li>
+                <li><a href="#conferences">Conferences</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-image-wrapper">
+                <div class="hero-image">
+                    <img src="images/vicky-photo.jpg" alt="Vicky Anand" style="width:100%;height:100%;object-fit:cover;">
+                </div>
+            </div>
+            <h1 class="hero-name">Vicky Anand</h1>
+            <p class="hero-title">Junior Researcher — Geospatial &amp; Environmental Sciences</p>
+            <p class="hero-affiliation">
+                <i class="fas fa-university"></i> Academy of Biology &amp; Biotechnology, Southern Federal University, Rostov-on-Don, Russia
+            </p>
+            <div class="hero-links">
+                <a href="mailto:vickyanand198@gmail.com" class="hero-btn primary">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </a>
+                <a href="#publications" class="hero-btn secondary">
+                    <i class="fas fa-file-alt"></i> Publications
+                </a>
+                <a href="https://scholar.google.com/citations?user=_QTlY1cAAAAJ&hl=en" target="_blank" class="hero-btn secondary">
+                    <i class="fas fa-graduation-cap"></i> Google Scholar
+                </a>
+            </div>
+            <div class="hero-social">
+                <a href="https://scholar.google.com/citations?user=_QTlY1cAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://orcid.org/0009-0003-3684-1696" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
+                <a href="https://www.researchgate.net/profile/Vicky-Anand-5?ev=hdr_xprf" target="_blank" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                <a href="https://www.scopus.com/authid/detail.uri?authorId=57211988669" target="_blank" title="Scopus"><i class="fas fa-file-signature"></i></a>
+                <a href="mailto:vickyanand198@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- ==================== NEWS TICKER ==================== -->
+    <section id="news-ticker">
+        <div class="container">
+            <div class="ticker-wrapper">
+                <span class="ticker-label"><i class="fas fa-bullhorn"></i> Latest News</span>
+                <div class="ticker-content">
+                    <div class="ticker-track">
+                        <span class="ticker-item">🎉 New article in Earth Systems and Environment (2026) — predictive ML framework for biochar performance in heavy metals remediation</span>
+                        <span class="ticker-item">📢 Presented at the III All-Russian Scientific &amp; Practical Conference, Kalmyk State University, Elista — April 2026</span>
+                        <span class="ticker-item">📖 New article in Environmental Nanotechnology, Monitoring &amp; Management on nanoparticles and biochar in microplastics remediation (2026)</span>
+                        <span class="ticker-item">🔬 Systematic review on machine learning in sustainable agriculture published in Phyton (2025)</span>
+                        <span class="ticker-item">🎓 Pursuing Ph.D. in Soil Science and Land Resources Assessment at Southern Federal University since 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="lead">I am a junior researcher in geospatial and environmental sciences, currently pursuing a Ph.D. at Southern Federal University, Rostov-on-Don, Russia. My work centers on climate change, disaster vulnerability and risk assessment, and the application of geospatial modeling and machine learning to environmental and agricultural challenges.</p>
+                    <p>My work spans designing and optimizing geospatial models for environmental and hazard assessments, interpreting spatial datasets with advanced geospatial and statistical techniques, and applying GIS software, remote sensing tools, and machine learning frameworks to spatial analysis problems. I also regularly draft, write, and review research publications in the geospatial sciences.</p>
+                    <p>Before joining the Academy of Biology and Biotechnology at Southern Federal University as a Junior Researcher, I worked as a Geographer with the Directorate of Census Operations, Punjab, India, and completed an internship at the Indian Meteorological Centre, Chandigarh. I hold a Master's in Remote Sensing and GIS from Panjab University, Chandigarh, and a Bachelor's (Honours) in Geography from the University of Delhi.</p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-number" data-target="12">0</div>
+                            <div class="highlight-label">Publications</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-number" data-target="6">0</div>
+                            <div class="highlight-label">Conference Talks</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-number" data-target="10">0</div>
+                            <div class="highlight-label">Trainings Completed</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-number" data-target="7">0</div>
+                            <div class="highlight-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-details">
+                    <div class="detail-card">
+                        <h3><i class="fas fa-microscope"></i> Research Interests</h3>
+                        <ul class="tag-list">
+                            <li>Climate Change</li>
+                            <li>Disaster Vulnerability &amp; Risk Assessment</li>
+                            <li>Geospatial Modeling</li>
+                            <li>Machine Learning</li>
+                            <li>Spatial Data Analysis for Natural Hazards</li>
+                            <li>ML &amp; AI for Spatial Analysis</li>
+                            <li>Weather &amp; Climate Modeling</li>
+                            <li>Urban &amp; Regional Planning</li>
+                        </ul>
+                    </div>
+                    <div class="detail-card">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <div class="timeline-mini">
+                            <div class="timeline-mini-item">
+                                <span class="year">2024–</span>
+                                <div>
+                                    <strong>Ph.D., Soil Science &amp; Land Resources Assessment</strong>
+                                    <p>Southern Federal University (pursuing)</p>
+                                </div>
+                            </div>
+                            <div class="timeline-mini-item">
+                                <span class="year">2018–20</span>
+                                <div>
+                                    <strong>M.Sc. Remote Sensing &amp; GIS</strong>
+                                    <p>Panjab University, Chandigarh</p>
+                                </div>
+                            </div>
+                            <div class="timeline-mini-item">
+                                <span class="year">2015–18</span>
+                                <div>
+                                    <strong>B.A. (Honours), Geography</strong>
+                                    <p>Shaheed Bhagat Singh College, University of Delhi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <h3><i class="fas fa-briefcase"></i> Experience</h3>
+                        <div class="timeline-mini">
+                            <div class="timeline-mini-item">
+                                <span class="year">2024–</span>
+                                <div>
+                                    <strong>Junior Researcher</strong>
+                                    <p>Academy of Biology &amp; Biotechnology, Southern Federal University, Russia</p>
+                                </div>
+                            </div>
+                            <div class="timeline-mini-item">
+                                <span class="year">2021–23</span>
+                                <div>
+                                    <strong>Geographer (MAP)</strong>
+                                    <p>Directorate of Census Operations, Punjab</p>
+                                </div>
+                            </div>
+                            <div class="timeline-mini-item">
+                                <span class="year">2019</span>
+                                <div>
+                                    <strong>Intern</strong>
+                                    <p>Indian Meteorological Centre, Chandigarh</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RESEARCH SECTION ==================== -->
+    <section id="research" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Research</h2>
+            <p class="section-subtitle">Core areas of scientific and technical work across geospatial and environmental research:</p>
+
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Geospatial Analysis</h3>
+                    <p>GIS-based spatial data analysis and geostatistical modeling, land use/land cover classification and change detection, and environmental monitoring and disaster assessment.</p>
+                    <div class="research-tags">
+                        <span>GIS</span>
+                        <span>Geostatistics</span>
+                        <span>LULC Change</span>
+                    </div>
+                    <a href="#publications" class="research-link">See related work <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-house-flood-water"></i>
+                    </div>
+                    <h3>Disaster Risk &amp; Environmental Assessment</h3>
+                    <p>Landslide hazard and susceptibility mapping, climate change impact analysis, groundwater potential assessment, and hydro-meteorological hazard and vulnerability mapping.</p>
+                    <div class="research-tags">
+                        <span>Landslide Susceptibility</span>
+                        <span>Climate Impact</span>
+                        <span>Groundwater Potential</span>
+                    </div>
+                    <a href="#publications" class="research-link">See related work <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <h3>Data Processing &amp; Visualization</h3>
+                    <p>Thematic map creation, spatial database management, and satellite image processing and classification for environmental and agricultural applications.</p>
+                    <div class="research-tags">
+                        <span>Thematic Mapping</span>
+                        <span>Spatial Databases</span>
+                        <span>Image Classification</span>
+                    </div>
+                    <a href="#publications" class="research-link">See related work <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Machine Learning &amp; AI for Spatial Analysis</h3>
+                    <p>Machine learning applications in geospatial research, from ensemble models for groundwater potential mapping to predictive frameworks for soil and crop parameters.</p>
+                    <div class="research-tags">
+                        <span>Random Forest</span>
+                        <span>Ensemble ML</span>
+                        <span>Google Earth Engine</span>
+                    </div>
+                    <a href="#publications" class="research-link">See related work <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="research-diagram">
+                <img src="images/research-diagram.png" alt="Geospatial research workflow diagram">
+                <p>Representative geospatial &amp; machine learning research workflow</p>
+            </div>
+
+            <p class="exposure-note"><i class="fas fa-globe-europe"></i> Global exposure: Russia (Southern Federal University)</p>
+        </div>
+    </section>
+
+    <!-- ==================== PUBLICATIONS SECTION ==================== -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <p class="section-subtitle">11 peer-reviewed research articles and 1 book chapter. <a href="https://scholar.google.com/citations?user=_QTlY1cAAAAJ&hl=en" target="_blank">View full list on Google Scholar →</a></p>
+
+            <!-- Publication Filters -->
+            <div class="pub-controls">
+                <div class="pub-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="journal">Journal Articles</button>
+                    <button class="filter-btn" data-filter="book">Book Chapter</button>
+                </div>
+                <div class="pub-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="pubSearch" placeholder="Search publications...">
+                </div>
+            </div>
+
+            <!-- Publication Year Groups -->
+            <div class="pub-list" id="pubList">
+                <!-- 2026 -->
+                <div class="pub-year-group">
+                    <h3 class="pub-year">2026</h3>
+
+                    <div class="pub-item" data-type="journal">
+                        <div class="pub-marker new">NEW</div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Predictive Machine Learning Framework for Biochar Performance in Heavy Metals Remediation: A Decision-support Approach for Contaminated Soil Health Management</h4>
+                            <p class="pub-authors"><strong>Anand, V.</strong>, Rajput, P., Singh, B. et al.</p>
+                            <p class="pub-venue"><em>Earth Systems and Environment</em>, 2026</p>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.1007/s41748-026-01102-w" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-type="journal">
+                        <div class="pub-marker"></div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">A critical evaluation of nanoparticles and biochar in microplastics remediation in soil</h4>
+                            <p class="pub-authors">Rajput, P., Banerjee, S., <strong>Anand, V.</strong>, Rajput, V.D., Mandzhieva, S., Srivastava, P.K., Minkina, T.</p>
+                            <p class="pub-venue"><em>Environmental Nanotechnology, Monitoring &amp; Management</em>, p.101142, 2026</p>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.1016/j.enmm.2026.101142" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2025 -->
+                <div class="pub-year-group">
+                    <h3 class="pub-year">2025</h3>
+
+                    <div class="pub-item" data-type="journal">
+                        <div class="pub-marker"></div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Analyzing the spatial relationship between land surface temperature and normalized difference vegetation index using geospatial technique</h4>
+                            <p class="pub-authors"><strong>Anand, V.</strong>, Kaur, S., Rajput, V.D., Minkina, T., Mandzhieva, S., Kumar, S., Sharma, A., Kumar, S.</p>
+                            <p class="pub-venue"><em>Discover Geoscience</em>, 2025</p>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.1007/s44288-025-00167-w" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-type="journal">
+                        <div class="pub-marker"></div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Analysing groundwater potentiality by coupling geospatial techniques and ensemble machine learning models</h4>
+                            <p class="pub-authors"><strong>Anand, V.</strong>, Rajput, V.D., Minkina, T., Mandzhieva, S., Sharma, A., Kumar, D., Kumar, S.</p>
+                            <p class="pub-venue"><em>Discover Cities</em>, 2025</p>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.1007/s44327-025-00095-x" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-type="journal">
+                        <div class="pub-marker"></div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Systematic review of machine learning applications in sustainable agriculture: insights on soil health and crop improvement</h4>
+                            <p class="pub-authors"><strong>Anand, V.</strong>, Rajput, P., Minkina, T., Mandzhieva, S., Kumar, S., Chauhan, A., Rajput, V.</p>
+                            <p class="pub-venue"><em>Phyton</em>, 94(5), p.1339, 2025</p>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.32604/phyton.2025.063927" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-type="journal">
+                        <div class="pub-marker"></div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Temporal patterns and influences of monthly, seasonal and annual temperatures on methane emissions in Greece, Armenia and Russia over two decades</h4>
+                            <p class="pub-authors">Pradhan, A., Singh, A., Singh, A.K., Rawat, S., Rajput, V.D., Ghazaryan, K., <strong>Anand, V.</strong>, Minkina, T. et al.</p>
+                            <p class="pub-venue"><em>Science of the Total Environment</em>, 2025</p>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.1016/j.scitotenv.2025.179428" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-type="journal">
+                        <div class="pub-marker"></div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Nanoparticles and plant DNA damage: a review of genotoxic mechanisms and research outlook</h4>
+                            <p class="pub-authors">Banerjee, S., Rajput, P., Naz, I., <strong>Anand, V.</strong>, Rajput, V.D., Sathyanarayana, E., Chauhan, A., Mandzhieva, S., Minkina, T., Sousa, J.R.</p>
+                            <p class="pub-venue"><em>Chemosphere</em>, 391, p.144731, 2025</p>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.1016/j.chemosphere.2025.144731" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-type="journal">
+                        <div class="pub-marker"></div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Vermicomposting for climate change mitigation and sustainable soil health: organic waste management, nitrogen use efficiency, and ecosystem services</h4>
+                            <p class="pub-authors">Bhatt, R., Rajput, V.D., Chandra, M.S., Majumder, D., Garg, A.K., Dinesh, G.K., Riar, A.S., Bhatt, K., Verma, K.K., De Oliveira, M.W., <strong>Anand, V.</strong></p>
+                            <p class="pub-venue"><em>Sains Tanah</em>, 22(2), p.525, 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Chapter -->
+                <div class="pub-year-group">
+                    <h3 class="pub-year">Book Chapter</h3>
+                    <div class="pub-item" data-type="book">
+                        <div class="pub-marker book">BOOK</div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Predicting Weather Conditions for Improving Crop Productivity Using Machine Learning Approaches</h4>
+                            <p class="pub-authors"><strong>Anand, V.</strong>, Rajput, V.D., Minkina, T., Mandzhieva, S., Sharma, A., Kumar, S., Konstantinova, E.</p>
+                            <p class="pub-venue">Chapter in <em>Nanotechnology Applications and Innovations for Improved Soil Health</em>, pp.143–171</p>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.4018/979-8-3693-1471-5.ch008" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2024 -->
+                <div class="pub-year-group">
+                    <h3 class="pub-year">2024</h3>
+                    <div class="pub-item" data-type="journal">
+                        <div class="pub-marker"></div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Investigating the Dynamics of Urban Heat Islands in Response to Vegetative Cover and Land Use Land Cover Changes in Chandigarh</h4>
+                            <p class="pub-authors"><strong>Anand, V.</strong>, Singh, A., Kumar, S., Sharma, A., Kumar, S.</p>
+                            <p class="pub-venue"><em>Annals of the National Association of Geographers, India</em>, 44(2), 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2022 -->
+                <div class="pub-year-group">
+                    <h3 class="pub-year">2022</h3>
+                    <div class="pub-item" data-type="journal">
+                        <div class="pub-marker"></div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Landslide Susceptibility Mapping Using Shannon's Entropy Method Using Hybrid Technique: A Case Study of Kinnaur District, Himachal Pradesh, India</h4>
+                            <p class="pub-authors"><strong>Anand, V.</strong>, Sharma, A., Sahni, A.K., Bano, S., Jangra, S.K.</p>
+                            <p class="pub-venue"><em>Journal of Remote Sensing &amp; GIS</em>, 2022</p>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.35248/2469-4134.22.11.261" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2021 -->
+                <div class="pub-year-group">
+                    <h3 class="pub-year">2021</h3>
+                    <div class="pub-item" data-type="journal">
+                        <div class="pub-marker"></div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Assessing Impact of Geophysical Hydro-Meteorological Hazards Based on Perception Approach, Kinnaur Region, Himachal Pradesh</h4>
+                            <p class="pub-authors">Lal, R., <strong>Anand, V.</strong></p>
+                            <p class="pub-venue"><em>The Asian Review of Civil Engineering</em>, Vol.10 No.2, pp.18–25, 2021</p>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.51983/tarce-2021.10.2.3119" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TRAININGS SECTION ==================== -->
+    <section id="trainings" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Trainings &amp; Certifications</h2>
+            <p class="section-subtitle">Professional development in remote sensing, GIS, and disaster management</p>
+
+            <div class="teaching-grid">
+                <div class="course-card">
+                    <h3>ArcGIS Pro Basics</h3>
+                    <p class="course-meta"><i class="fas fa-calendar"></i> Completed 8 Feb 2023</p>
+                    <p class="course-org">ESRI Web Course</p>
+                </div>
+
+                <div class="course-card">
+                    <h3>Getting Started with Mapping and Visualization</h3>
+                    <p class="course-meta"><i class="fas fa-calendar"></i> Completed 8 Feb 2023</p>
+                    <p class="course-org">ESRI Web Course</p>
+                </div>
+
+                <div class="course-card">
+                    <h3>Getting Started with Spatial Analysis</h3>
+                    <p class="course-meta"><i class="fas fa-calendar"></i> Completed 8 Feb 2023</p>
+                    <p class="course-org">ESRI Web Course</p>
+                </div>
+
+                <div class="course-card">
+                    <h3>Exploring Google Earth Engine</h3>
+                    <p class="course-meta"><i class="fas fa-calendar"></i> Completed 6 Feb 2022</p>
+                    <p class="course-org">Swastik Edustart GIS Training Institute — Webinar</p>
+                </div>
+
+                <div class="course-card">
+                    <h3>Basics of RS, GIS &amp; GNSS</h3>
+                    <p class="course-meta"><i class="fas fa-calendar"></i> 16 Aug – 26 Nov 2021</p>
+                    <p class="course-org">IIRS-Dehradun Distance Learning Programme</p>
+                </div>
+
+                <div class="course-card">
+                    <h3>Basics of Geocomputation and Geoweb Services</h3>
+                    <p class="course-meta"><i class="fas fa-calendar"></i> 19–29 Oct 2020</p>
+                    <p class="course-org">IIRS-ISRO Outreach Program</p>
+                </div>
+
+                <div class="course-card">
+                    <h3>Understanding of Coastal Ocean Processes Using Remote Sensing and Numerical Modelling</h3>
+                    <p class="course-meta"><i class="fas fa-calendar"></i> 21–25 Sep 2020</p>
+                    <p class="course-org">IIRS-ISRO Outreach Program</p>
+                </div>
+
+                <div class="course-card">
+                    <h3>Global Navigation Satellite System</h3>
+                    <p class="course-meta"><i class="fas fa-calendar"></i> 14–25 Sep 2020</p>
+                    <p class="course-org">IIRS-ISRO Outreach Program</p>
+                </div>
+
+                <div class="course-card">
+                    <h3>Cloudburst and Flood</h3>
+                    <p class="course-meta"><i class="fas fa-calendar"></i> 21 Jul 2020</p>
+                    <p class="course-org">National Institute of Disaster Management — Webinar</p>
+                </div>
+
+                <div class="course-card">
+                    <h3>Built-up Area and its Use in Census Mapping</h3>
+                    <p class="course-meta"><i class="fas fa-calendar"></i></p>
+                    <p class="course-org">Map Division, ORGI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONFERENCES SECTION ==================== -->
+    <section id="conferences" class="section">
+        <div class="container">
+            <h2 class="section-title">Conference Papers &amp; Poster Presentations</h2>
+
+            <div class="talks-list">
+                <div class="talk-item">
+                    <div class="talk-date">
+                        <span class="month">APR</span>
+                        <span class="day">16</span>
+                        <span class="year-small">2026</span>
+                    </div>
+                    <div class="talk-content">
+                        <h4>Ecological Vulnerability Assessment in Fluvial Erosion Prone Environments: A Machine Learning Approach</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> III All-Russian Scientific &amp; Practical Conference with International Participation, "Current Issues of Natural Science in Modern Scientific Knowledge", Kalmyk State University, Elista, Russia — 16–18 Apr 2026</p>
+                    </div>
+                </div>
+
+                <div class="talk-item">
+                    <div class="talk-date">
+                        <span class="month">SEP</span>
+                        <span class="day">15</span>
+                        <span class="year-small">2025</span>
+                    </div>
+                    <div class="talk-content">
+                        <span class="talk-badge upcoming" style="background:#805ad5;">Poster</span>
+                        <h4>Machine Learning Modeling of Biochar Performance in Remediating Heavy Metals from Contaminated Soil</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> "Catchment-River-Estuary: Studies of Soil Erosion, Channel and Estuary Processes", SFedU &amp; SSC RAS, Rostov-on-Don, Russia — 15–18 Sep 2025</p>
+                    </div>
+                </div>
+
+                <div class="talk-item">
+                    <div class="talk-date">
+                        <span class="month">JUL</span>
+                        <span class="day">7</span>
+                        <span class="year-small">2024</span>
+                    </div>
+                    <div class="talk-content">
+                        <h4>Machine Learning Approaches in Sustainable Agriculture: Retrospect and Prospect</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> "Monitoring, Protection and Restoration of Soil Ecosystems under Anthropogenic Pressure", Soil Health Laboratory, D.I. Ivanovsky Academy of Biology and Biotechnology, Southern Federal University, Rostov-on-Don, Russia — 7–9 Jul 2024</p>
+                    </div>
+                </div>
+
+                <div class="talk-item">
+                    <div class="talk-date">
+                        <span class="month">NOV</span>
+                        <span class="day">1</span>
+                        <span class="year-small">2022</span>
+                    </div>
+                    <div class="talk-content">
+                        <h4>Landslide Susceptibility Mapping Using Shannon Entropy Hybrid Technique: A Case Study of Kinnaur District, Himachal Pradesh</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> National Conference on "Landslide Risk Assessment and Mitigation in India", Department of Geography, Jamia Millia Islamia University, New Delhi, India — 1–2 Nov 2022</p>
+                    </div>
+                </div>
+
+                <div class="talk-item">
+                    <div class="talk-date">
+                        <span class="month">SEP</span>
+                        <span class="day">23</span>
+                        <span class="year-small">2022</span>
+                    </div>
+                    <div class="talk-content">
+                        <h4>Mitigation Strategies for Landslide Hazard in the Kinnaur District, Himachal Pradesh, India</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> National Seminar &amp; 1st Annual Meet of GSHP, "Geography, Development and Public Policy", Department of Geography, Himachal Pradesh University, India — 23–24 Sep 2022</p>
+                    </div>
+                </div>
+
+                <div class="talk-item">
+                    <div class="talk-date">
+                        <span class="month">FEB</span>
+                        <span class="day">5</span>
+                        <span class="year-small">2018</span>
+                    </div>
+                    <div class="talk-content">
+                        <h4>Landuse Land Cover Change of Dehradun: A Geographical Analysis</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> International Conference on "Livable Cities: Transforming Sustainability and its Challenges", Department of Geography, Shaheed Bhagat Singh College, University of Delhi, India — 5–7 Feb 2018</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Skills &amp; Expertise</h2>
+            <p class="section-subtitle">Technical, software, and language proficiencies</p>
+
+            <div class="skills-grid">
+                <div class="detail-card">
+                    <h3><i class="fas fa-code"></i> Programming &amp; Data Tools</h3>
+                    <ul class="tag-list">
+                        <li>Python</li>
+                        <li>R</li>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>HTML</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class="detail-card">
+                    <h3><i class="fas fa-desktop"></i> GIS &amp; Remote Sensing Software</h3>
+                    <ul class="tag-list">
+                        <li>ArcGIS Pro</li>
+                        <li>ArcGIS</li>
+                        <li>QGIS</li>
+                        <li>Global Mapper</li>
+                        <li>SNAP</li>
+                        <li>ERDAS Imagine</li>
+                        <li>Google Earth Pro</li>
+                        <li>AutoCAD Map 3D</li>
+                        <li>SPSS</li>
+                        <li>Weka</li>
+                        <li>MS Office</li>
+                    </ul>
+                </div>
+                <div class="detail-card">
+                    <h3><i class="fas fa-language"></i> Languages Known</h3>
+                    <ul class="tag-list">
+                        <li>Hindi</li>
+                        <li>English</li>
+                        <li>Russian</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Office</h3>
+                        <p>Zorge 21g<br>
+                        Southern Federal University<br>
+                        Rostov-on-Don, Russia</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3><i class="fas fa-envelope"></i> Email</h3>
+                        <p><a href="mailto:vickyanand198@gmail.com">vickyanand198@gmail.com</a></p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3><i class="fas fa-phone"></i> Phone</h3>
+                        <p>(+7) 909 409 2346<br>
+                        (+91) 9555 716 011</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3><i class="fas fa-id-badge"></i> Researcher IDs</h3>
+                        <p>ORCID: 0009-0003-3684-1696<br>
+                        Scopus ID: 57211988669</p>
+                    </div>
+
+                    <!-- Map placeholder -->
+                    <div class="contact-map">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map"></i>
+                            <p>Southern Federal University, Rostov-on-Don</p>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Southern+Federal+University+Rostov-on-Don" target="_blank" class="btn-small">Open in Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="affiliation">Affiliation</label>
+                            <input type="text" id="affiliation" name="affiliation">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic...</option>
+                                <option value="collaboration">Research Collaboration</option>
+                                <option value="review">Manuscript / Peer Review</option>
+                                <option value="conference">Conference or Speaking Invitation</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Vicky Anand</h3>
+                    <p>Junior Researcher, Academy of Biology &amp; Biotechnology<br>Southern Federal University, Rostov-on-Don, Russia</p>
+                    <div class="footer-social">
+                        <a href="https://scholar.google.com/citations?user=_QTlY1cAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="https://orcid.org/0009-0003-3684-1696" target="_blank"><i class="fab fa-orcid"></i></a>
+                        <a href="https://www.researchgate.net/profile/Vicky-Anand-5?ev=hdr_xprf" target="_blank"><i class="fab fa-researchgate"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#research">Research</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                        <li><a href="#trainings">Trainings</a></li>
+                        <li><a href="#conferences">Conferences</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://scholar.google.com/citations?user=_QTlY1cAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+                        <li><a href="https://www.researchgate.net/profile/Vicky-Anand-5?ev=hdr_xprf" target="_blank">ResearchGate</a></li>
+                        <li><a href="https://orcid.org/0009-0003-3684-1696" target="_blank">ORCID</a></li>
+                        <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57211988669" target="_blank">Scopus Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vicky Anand. All rights reserved. | Last updated: July 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
